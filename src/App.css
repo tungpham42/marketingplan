@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #6366f1; /* Indigo - Bold & Professional */
+  --bg-color: #f8fafc;
+  --card-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: "Work Sans", sans-serif !important;
+  background-color: var(--bg-color);
+}
+
+/* Overriding Ant Design's default fonts */
+.ant-typography,
+.ant-form-item-label > label,
+.ant-select,
+.ant-input,
+.ant-btn {
+  font-family: "Work Sans", sans-serif !important;
+}
+
+.strategy-header {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 40px !important;
+  height: 80px !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.glass-card {
+  border-radius: 20px !important;
+  border: 1px solid #ffffff !important;
+  box-shadow: var(--card-shadow) !important;
+  overflow: hidden;
+}
+
+.generate-btn {
+  height: 56px !important;
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  background: var(--primary-color) !important;
+  border: none !important;
+  box-shadow: 0 4px 14px 0 rgba(99, 102, 241, 0.39) !important;
+  transition: all 0.3s ease !important;
+}
+
+.generate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.45) !important;
+}
+
+/* Markdown Styling - Bold & Catchy */
+.markdown-body h1 {
+  color: #1e293b;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+.markdown-body h2 {
+  color: #4338ca;
+  margin-top: 30px;
+}
+.markdown-body ul {
+  padding-left: 20px;
+}
+.markdown-body li {
+  margin-bottom: 8px;
+}
+.markdown-body blockquote {
+  border-left: 4px solid var(--primary-color);
+  background: #f1f5f9;
+  padding: 10px 20px;
+  border-radius: 0 8px 8px 0;
+}
+.markdown-body code {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.markdown-body pre {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+.markdown-body a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.markdown-body a:hover {
+  color: #4f46e5;
+}
+.markdown-body p {
+  line-height: 1.6;
+  color: #334155;
+}
+.markdown-body strong {
+  color: #1e293b;
+  font-weight: 600;
+}
+.markdown-body em {
+  font-style: italic;
+}
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: left;
+}
